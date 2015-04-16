@@ -4,12 +4,13 @@ You have been provided with a Unity project containing basic gameplay. This proj
 https://www.youtube.com/watch?v=CHS00nAgdk4 check it out for reference.
 (Your project doesn’t have to be as complicated, but by phase 3 your project will be close to this point )
 
-For this Phase I’d like you to ;
+# For this Phase I’d like you to
 1. Add Obstacles to the scene with 3D colliders to delay/slow down the player 
-Bonus : make these obstacles move from one point to another or make them breakable.
+Bonus make these obstacles move from one point to another or make them breakable.
 (You can download free assets from the unity asset store, or use the default shapes provided in unity i.e. : cubes, spheres)
 2. Create health points for the player, any time they hit an obstacle subtract health
 This can be done using something like OnTriggerEnter, or OnCollisionEnter.
+```
 i.e. Void CollisionEnter(Collision other)
 { 
 //This Will Subtract 1 from hp every time this collider hit’s another collider
@@ -27,6 +28,6 @@ hp -= 1;
 Debug.Log(hp); 
 }
 } 
-
+```
 
 Their are currently two commented scripts Controls.cs, and SmoothFollow.cs that will handle movement of the player, and the camera following the player. You do not need to edit these but you can if you’d like, I have commented every line to explain what is going on in these scripts.
